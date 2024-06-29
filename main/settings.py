@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'register',
     'home',
     'account',
+    'book',
+    'author',
 ]
 
 MIDDLEWARE = [
@@ -81,16 +83,11 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'abdusami',
-        'PASSWORD': 'abdusami1602',
-        'HOST': 'localhost',
-        'PORT': '5432',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
     }
 }
-
 
 
 # Password validation
